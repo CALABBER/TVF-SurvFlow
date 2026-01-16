@@ -15,11 +15,16 @@ R package for standardized and user-friendly framework for survival analysis wit
 - automatically generated plots for each model with
   - concordance index
   - individual survival curves
-  - tuning plot (if applicable) 
+  - tuning plot (if applicable)
+
+ ![rfsrc](images/RFSRC.png)
+
 - Possibility to directly compare models with compairson tools
 -   ROc curve at one or several time points
 -   AUC over time
 -   Brier score over time
+
+![survival_metrics_3.2.1](images/survival_metrics_3.2.1.pdf)
 
 ## Toy data set used
 CGD 
