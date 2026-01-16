@@ -15,6 +15,7 @@ R package for standardized and user-friendly framework for survival analysis wit
 - automatically generated plots for each model with
   - concordance index
   - individual survival curves
+  - variable of importance
   - tuning plot (if applicable)
 
  ![rfsrc](images/RFSRC.png)
