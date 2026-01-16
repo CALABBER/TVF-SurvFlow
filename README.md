@@ -19,13 +19,19 @@ R package for standardized and user-friendly framework for survival analysis wit
 
  ![rfsrc](images/RFSRC.png)
 
-- Possibility to directly compare models with compairson tools
--   ROc curve at one or several time points
--   AUC over time
--   Brier score over time
+- Possibility to directly compare models with comparison tools
+  - ROc curve at one or several time points
+  - AUC over time
+  - Brier score over time
+  - Variable of importance
 
-![survival_metrics_3.2.1](images/survival_metrics_3.2.1.pdf)
+![metrics](images/metrics.png)
+![varimp](images/varimp_with_gbm3_satpred.png)
 
 ## Toy data set used
-CGD 
+CGD - Chronic Granulomatous Disease
+
+The International Chronic Granulomatous Disease Cooperative Study Group. A
+controlled trial of interferon gamma to prevent infection in chronic granuloma-
+tous disease. _The New England Journal of Medicine_, (324):509–516, 1991.
 
