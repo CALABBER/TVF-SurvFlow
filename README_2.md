@@ -196,9 +196,6 @@ time-stamped infection events.
 
 ## Known limitations
 
-These are documented honestly so they can be understood (and fixed) later — they are the
-main reasons this is "research code" rather than a packaged tool:
-
 1. **Model functions rely on global formula objects.** `coxph_func()`, `pcox_func()`,
    `rfsrc_func()`, etc. read `formula_with_tvf_without_cluster` /
    `formula_without_tvf_without_cluster` from the global environment rather than taking
@@ -210,10 +207,7 @@ main reasons this is "research code" rather than a packaged tool:
 3. **TVF not yet supported everywhere.** The comparison functions
    (`plot_survival_metrics()`, `compute_pec_all()`) and the RSF, GBM, DeepSurv, and DeepPAMM
    models currently run in the no-TVF setting only (marked in the source).
-4. **Known bugs to fix** (see `FUNCTION_REFERENCE.md` for specifics): a variable-order bug
-   in `coxph_func()`, an undefined-object/order issue in `gbm3_func()`, a `res_rigde` typo
-   in `compute_pec_all()`, and use of a global `df` inside `deeppamm_func()`.
-5. **Deep-learning reproducibility** depends on the Keras/TensorFlow backend and is not
+4. **Deep-learning reproducibility** depends on the Keras/TensorFlow backend and is not
    seed-deterministic across machines.
 
 ---
