@@ -105,13 +105,11 @@ All model wrappers are reachable through a single dispatcher, `model()`.
 ```
 TVF-SurvFlow/
 ├── TVF-SurvFlow_functions.R   # all function definitions (models, metrics, utilities)
-├── TVF-SurvFlow_main.r        # end-to-end example workflow on the CGD dataset
+├── TVF-SurvFlow_main.R        # end-to-end example workflow on the CGD dataset
 ├── README.md
 ├── DESCRIPTION                # package-style metadata + dependency list
-├── FUNCTION_REFERENCE.md      # per-function documentation (params / returns / notes)
 ├── images/                    # example output figures
-└── tests/
-    └── testthat/              # runnable unit tests for the utility functions
+└── test-utils.R/              # runnable unit tests for the utility functions
 ```
 
 ---
