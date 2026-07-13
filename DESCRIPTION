@@ -1,0 +1,61 @@
+Package: TVFSurvFlow
+Title: Standardized Framework for Survival Analysis with Time-Varying Features
+Version: 0.1.0
+Authors@R:
+    person("Capucine", "Labat-Berthier",
+           email = "capucine.labat.berthier@gmail.com",
+           role = c("aut", "cre"))
+Description: A standardized, user-friendly framework that wraps classical and
+    machine-learning survival models behind a single interface, with optional
+    support for time-varying features. Trains, evaluates, and compares Cox
+    proportional hazards, penalized Cox (ridge/lasso/elastic net), random
+    survival forests, gradient boosting, left-truncation-aware trees, DeepSurv,
+    and DeepPAMM under a common workflow, with shared metrics (time-dependent
+    ROC/AUC, Brier score, prediction error curves) and reporting. Extends the
+    'satpred' package. Developed as a research project; see README for status
+    and known limitations.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Depends:
+    R (>= 4.1.0)
+Imports:
+    survival,
+    satpred,
+    pcoxtime,
+    randomForestSRC,
+    gbm,
+    gbm3,
+    LTRCtrees,
+    partykit,
+    pec,
+    riskRegression,
+    survcomp,
+    ggplot2,
+    survminer,
+    gridExtra,
+    grid,
+    RColorBrewer,
+    dplyr,
+    tidyr,
+    purrr,
+    reshape2,
+    data.table,
+    pdp,
+    caret,
+    stats
+Suggests:
+    survivalmodels,
+    deeppamm,
+    pammtools,
+    keras,
+    tensorflow,
+    gridGraphics,
+    testthat (>= 3.0.0)
+Remotes:
+    CYGUBICKO/satpred,
+    gbm-developers/gbm3
+Config/testthat/edition: 3
+biocViews: survcomp
