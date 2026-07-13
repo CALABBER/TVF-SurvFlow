@@ -109,7 +109,9 @@ TVF-SurvFlow/
 ├── README.md
 ├── DESCRIPTION                # package-style metadata + dependency list
 ├── images/                    # example output figures
-└── test-utils.R/              # runnable unit tests for the utility functions
+└── test-utils.R/              
+     └──test-utils.R           # runnable unit tests for the utility functions
+     └──TVF-SurvFlow_utils.R   # lightweight copy of data-handling functions for fast testing
 ```
 
 ---
