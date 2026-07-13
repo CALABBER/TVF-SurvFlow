@@ -6,8 +6,14 @@ TVF-SurvFlow wraps a range of classical and machine-learning survival models beh
 single, consistent interface, so that several model families can be trained, evaluated,
 and compared under one workflow — optionally with time-varying covariates. Each model
 produces the same set of outputs (concordance index, individual survival curves,
-variable importance) and can be compared head-to-head with shared metrics
+variable importance).
+ ![rfsrc](images/RFSRC.png)
+ ![varimp](images/varimp_with_gbm3_satpred.png)
+
+Each model can be compared head-to-head with shared metrics
 (time-dependent ROC/AUC, Brier score, prediction error curves).
+![metrics](images/metrics.png)
+
 
 > **Status: research code.** This project was developed as a semester research project
 > and is provided as a working analysis framework, not (yet) a formally packaged,
